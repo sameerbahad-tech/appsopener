@@ -174,3 +174,8 @@ pre {
 .social-links a:hover {
   text-decoration: underline;
 }
+
+.app-logo {
+  width: 150px; /* Adjust the width as needed */
+  margin-bottom: -30px; /* Adjust the margin as needed */
+}

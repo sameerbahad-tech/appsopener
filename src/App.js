@@ -3,6 +3,7 @@ import './App.css';
 import Note from './Note.js';
 import Instruction from './instruction.js';
 import Footer from "./footer.js";
+import logo from "./Assest/appsOpenerLogo.png"
 
 function App() {
   const [moods, setMoods] = useState([{ name: '', apps: [''] }]);
@@ -66,7 +67,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>AppsOpener</h1>
+      <img src={logo} alt="appsopener" className="app-logo" />
+      <h1>Apps Opener</h1>
       <p>AppsOpener is a handy tool for all computer users. 
         It helps you quickly open multiple apps based on your work mood. 
         Just set up different moods with the apps you need, and AppsOpener will create a script to launch them all at once. 
