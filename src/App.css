@@ -179,3 +179,63 @@ pre {
   width: 150px; /* Adjust the width as needed */
   margin-bottom: -30px; /* Adjust the margin as needed */
 }
+
+.upload-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.upload-button:hover {
+  background: linear-gradient(55deg,  #00ccff,rgb(4, 123, 243), rgb(14, 135, 221));
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} 
+
+.upload-button:hover::before {
+  opacity: 10; /* Show the shiny overlay on hover */
+}
+/* App.css */
+
+/* Add this CSS to style the close button for an iPhone theme */
+.discard-app-button {
+  background-color: transparent;
+  border: none;
+  color: #ff3b30; /* iOS red color */
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.discard-app-button:hover {
+  background-color: rgba(255, 59, 48, 0.1); /* Light red background on hover */
+}
+
+.discard-app-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 59, 48, 0.4); /* Focus outline */
+}
+
+.app-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.app-path {
+  flex: 1;
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
