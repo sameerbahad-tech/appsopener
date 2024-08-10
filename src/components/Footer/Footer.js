@@ -11,7 +11,7 @@ function Footer() {
         <a href="https://x.com/BahadSameer" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-twitter twitter-icon"></i> Twitter
         </a>
-        <a href="https://www.youtube.com/channel/UCh456gpfKAocBMp8Pr1Ew6A" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/@SameerBahad" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-youtube youtube-icon"></i> YouTube
         </a>
       </div>

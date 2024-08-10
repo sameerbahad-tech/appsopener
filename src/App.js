@@ -36,14 +36,18 @@ function App() {
 
   const generateScript = () => {
     let scriptContent = '@echo off\n';
-    scriptContent += 'echo Select your work setup:\n';
+    scriptContent += "echo      *****  Welcome To Apps Opener  *****\n"
+    scriptContent += 'echo Choose the work mood settings where you perform best:\n';
 
     moods.forEach((mood, index) => {
-      scriptContent += `echo ${index + 1}. ${mood.name}\n`;
+      scriptContent += `echo  ${index + 1}. ${mood.name}\n`;
     });
-
+    
+    scriptContent += 'echo  -----------------------------------------------------\n';
+    scriptContent += 'echo  m. Edit or discard the mood and app options.  \n';
+    scriptContent += 'echo  -----------------------------------------------------\n';
     scriptContent += 'set /p choice="Enter your choice: "\n\n';
-
+    
     moods.forEach((mood, index) => {
       scriptContent += `if %choice%==${index + 1} (\n`;
       mood.apps.forEach(app => {
@@ -51,7 +55,11 @@ function App() {
       });
       scriptContent += ')\n';
     });
-
+    scriptContent += `if %choice%==m (\n`
+    scriptContent += `    start "" https://sameerbahad-tech.github.io/appsopener/ "\n )\n`;
+  //   if %choice%==4 (
+  //     start "" "https://www.youtube.com/"
+  // )
     scriptContent += 'else (\n';
     scriptContent += '    echo Invalid choice. Please run the script again.\n';
     scriptContent += ')\n';
